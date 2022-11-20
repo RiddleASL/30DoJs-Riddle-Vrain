@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30DoJs: Day 1</title>
+</head>
+<body>
+    <!--! Lesson Notes -->
+    <!-- Inline -->
+    <button onclick="alert('Inline Script')">Inline</button>
+
+    <!-- Internal -->
+    <script>
+        console.log("Interal Script");
+        console.log("~~~~~~~~~~~~~~~");
+    </script>
+
+    <!-- External -->
+    <!-- <script src="1.js"></script> -->
+
+    <!-- Multi-External -->
+    <!-- <script src="1-1.js"></script> -->
+
+    <!-- 
+        DATATYPES:
+            Numbers;
+                Int           -> -2, -1, 0, 1, 2                                    (Whole numbers)
+                float point   -> -2.1, -1.45, 0.11, 1.9921, 2.9171223               (Numbers with decimals)
+
+            Strigs;
+                Single Quotes -> 'a', 'Hello World
+                Double Quotes -> "b", "Hello World"
+                Backticks     -> `c`, `Hello World`
+
+            Booleans;
+                True          -> if condition is met/something is turned on
+                False         -> if condition isnt met/something is turned off
+
+            Undefined;
+                let firstName;
+                console.log(firstName);                                             (Returns Undefined because "let firstName;" was not assigned a value)
+
+            Null;
+                let emptyValue = null;                                              (Returns null meaing empty value)
+
+            Comments;
+                Single line  -> //This is a single line comment
+                Multi Line   -> /*
+                                    This is a multi line comment
+                                    Meaning any lines inbetween the open and close indicators
+                                    are comments
+                                */
+
+            
+        VARIABLES:
+            When creating variables, name conventions are very important. Here are some rules to follow;
+                - Should NOT begin with a number
+                - Should NOT have any special characters (£,&,-,+, etc.) EXEPT for underscores and dollar sign
+                - Follow camelCase convention (letter of first word = lower case, every word after the first = first letter capital. See examples)
+                - Should NOT have any spaces between words
+
+            Examples of valid variable names;
+                - firstName                                                         (camelCase)
+                - lastName
+
+                - first_name                                                        (Underscore as spaces)
+                - last_name
+
+                - num1                                                              (Numbers not the first character)
+                - num_2
+
+                - $num1                                                             (Accepts $ as a character )
+                - $isMarried
+
+            Examples of invalid variable names;
+                - first-name                                                        (The dash symbol (-) is a special character that is NOT accepted)
+
+                - 1_name                                                            (Can NOT have number as first character) 
+
+                - has_#_children                                                    (The hashtag symbol (#) is a special character that is NOT accepted)
+            
+            How to declare a variable;
+                let (variable name) = (value);                                      (let is a variable that can change during the programme)
+                const (variable name) = (value);                                    (const means it does not change)
+
+            Examples of valid variables;
+                let age = 10;
+                const gravity = 9.81;
+                
+                (You can also declare multiple lines variables in one line. Its recommended to do seperate line declarations to make code more readable)
+                let name = "Riddle", job = "Unemployed", lives = "Ireland";
+    -->
+
+    <!--Todo: Exercises  -->
+    <script src="Exercise/Exercise.js"></script>
+    <script src="exercise/variable.js"></script>
+    <script src="Exercise/datatypes.js"></script>
+</body>
+</html>
